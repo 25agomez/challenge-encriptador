@@ -1,0 +1,73 @@
+body{
+    background: #43766C;
+}
+
+main{
+    display: flex;
+    height: 528px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.texto-a-encriptar{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 32px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cajatexto{
+    background: #F8FAE5;
+    border: solid #B19470;
+    border-radius: 10px;
+    color: #B19470;
+    display: flex;
+    font-size: 25px;
+    line-height: 32px;
+    padding: 12.8px;
+    resize: none;
+    width: 74%; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    main{
+        justify-content: space-between;
+    }
+    .caja-texto{
+        height: 320px;
+        margin: 12.8px 96px;
+        width: 74%;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .caja-texto{
+        height: 480px;
+        margin: 32px 32px;
+        width: 100%;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .caja-texto{
+        height: 512px;
+        margin: 16px 24px;
+        width: 80%;
+    }
+}

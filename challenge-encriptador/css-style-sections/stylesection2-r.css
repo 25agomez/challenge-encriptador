@@ -1,0 +1,82 @@
+.sorprised-snoopy{
+    box-sizing: border-box;
+    height: 320px;
+    overflow: auto;
+    text-align: center;
+    padding-top: 16px;
+    width: 100%;
+}
+
+.contenedor-resultado{
+    width: 100%;
+    height: 256px;
+    font-size: 17px;
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-top: -136px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo-encriptado{
+    color: #B19470;
+    font-size: 30px;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.texto-resultado{
+    background: #F8FAE5;
+    border: none;
+    color: #B19470;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    height: 208px;
+    line-height: 19.2px;
+    margin: 32px 16px;
+    padding-bottom: 8px;
+    resize: none;
+    width: 92%;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    #ocultar-muneco{
+        display: none;
+    }
+    .contenedor-resultado{
+        height: 480px;
+    }
+    .texto-resultado{
+        height: 352px;
+        margin-top: -288px;
+        font-size: 26px;
+        line-height: 28.8px;
+        padding-bottom: 16px;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    #ocultar-muneco{
+        display: none;
+    }
+    .contenedor-resultado{
+        height: 416px;
+    }
+    .texto-resultado{
+        height: 400px;
+        margin-top: -288px;
+        font-size: 22px;
+        line-height: 28.8px;
+        padding-bottom: 16px;
+    }
+}
