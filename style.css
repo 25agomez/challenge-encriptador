@@ -1,0 +1,68 @@
+.encabezado{
+    display: flex;
+    padding-top: 24px;
+    padding-left: 64px;
+}
+
+.pie-pagina{
+    background: #F8FAE5;
+    padding: 16px 0;
+    border: solid #B19470;
+    border-radius: 10px;
+}
+
+.pie-general{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pie-social-img{
+    width: 28px;
+    height: 28px;
+}
+
+.ocultar{
+    display: none;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .pie-general{
+        padding: 3.2px;
+    }
+    .pie-social-img{
+        transition: 1s all;
+        height: 28px;
+        width: 28px;
+    }
+    .pie-social-img:hover{
+        transform: scale(1.1);
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .pie-general{
+        padding: 16px;
+        margin-top: 992px;
+    }
+    .pie-social-img{
+        width: 36px;
+        height: 36px;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .pie-general{
+        padding: 12.8px;
+        margin-top: 1120px;
+    }
+    .pie-social-img{
+        width: 32px;
+        height: 32px;
+    }
+}
